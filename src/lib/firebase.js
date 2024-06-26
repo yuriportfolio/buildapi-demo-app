@@ -3,9 +3,9 @@ import 'firebase/compat/database';
 import 'firebase/compat/auth';
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyAf8rJqbViS8IumsRmdUW_VaBM2hYie0kM',
-    authDomain: 'withai-185a8.firebaseapp.com',
-    projectId: 'withai-185a8',
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
 };
 
 if (!firebase.apps.length) {
